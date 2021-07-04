@@ -4,6 +4,9 @@
 # print(PI, MY_NAME)
 
 
+
+
+
 #---------------------------------------------------------
 # decima = 100
 # print(decima) #100
@@ -118,6 +121,15 @@
 # antho = 'antho'
 # print(f'{dally} y {antho} se aman uwu') #necesito la f antes
 
+str = 'Hello World!'
+# print (str)          # Prints complete string
+# print (str[0])       # Prints first character of the string
+print (str[2:5])    # Prints characters starting from 3rd to 5th
+# print (str[2:])     # Prints string starting from 3rd character
+# print (str * 2)     # Prints string two times
+# print (str + "TEST")# Prints concatenated string
+
+
 
 
 
@@ -230,6 +242,6 @@
 # print(timedelta(minutes=100))
 # print(date.today())
 
-from fmath import add, sust
-add(1,2)
-sust(2,1)
+# from fmath import add, sust
+# add(1,2)
+# sust(2,1)
