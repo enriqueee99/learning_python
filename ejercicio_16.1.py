@@ -10,6 +10,6 @@ for numero in personas:
 
 num_consulta = int(input('¿Qué numero desea consultar?: '))
 if num_consulta in personas:
-    print(f'La persona es: ', nombre )
+    print(f'La persona es: ', personas[numero] )
 else:
     print('La persona no existe.')

@@ -1,0 +1,316 @@
+<IDOCTYPE html>
+    <html>
+    <head>
+    <title> Problema </title>
+    <meta charset="UTF-8">
+    <style>
+    h1 {color:#ff0000; background-color:#ffff00}
+    </style>
+    </head>
+    <body>
+    <h1>Primer titulo</h1>
+    <h1>Segundo título</h1>
+    </body>
+    </html>
+
+
+
+--------------------
+    <!DOCTYPE html>
+<html>
+<head>
+<title>Problema</title>
+<meta charset="UTF-8">
+<style>
+h1{
+font-family:times new roman;
+font-size:30px;
+font-style:italic;
+font-weight:bold;
+}
+h2 {
+font-family:verdana;
+font-size:20px;
+}
+</style>
+<head>
+<body>
+<h1>Titulo de nivel 1</h1>
+<h2>Titulo de nivel 2</h2>
+</body>
+</html>
+
+
+-------------
+<!DOCTYPE html>
+<html>
+<head>
+<title> Problema</title>
+<meta charset="UTF-8">
+
+<style>
+h1, h2, h3{
+font-family:verdana;
+color:#0000ff;}
+</style>
+</head>
+
+<body>
+<h1>Titulo de nivel 1</h1>
+<h2>Titulo de nivel 2</h2>
+<h3>Titulo de nivel 3</h3>
+</body>
+</html>
+
+
+------------------------
+
+<html>
+<head>
+<title> Problema</title>
+<meta charset="UTF-8">
+<style>
+body {
+color:#0000ff;
+font-family:verdana;
+}
+</style>
+</head>
+<body>
+<h1>Este es un titulo de nivel 1 y con el elemento 'em' la palabra:
+<em>Hola</em> </h1>
+<p>Todo este párrafo debe ser de color azul ya que lo hereda del
+elemento body.</p>
+</body>
+</html>
+
+
+----------------------
+
+
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title> Problema</title>
+    <meta charset="UTF-8">
+    <style>
+    body {
+    color:#0000ff;
+    font-family:verdana,
+    }
+    em{
+    color:#008800;
+    }
+    p{
+    color:#999999;
+    }
+    </style>
+    </head>
+    <body>
+    <h1>Este es un titulo de nivel 1 y con el elemento 'em'la palabra:<em>Hola </em> </h1>
+    <p>Todo este párrafo debe ser de color gris ya que lo redefine la
+    marca py no lo hereda de la marca body. </p>
+    </body>
+    </html>
+
+
+
+
+    ------------------------
+    <!DOCTYPE html>
+<html>
+<head>
+<title> Problema </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilos.css" type="text/css">
+</head>
+<body>
+<h1>Definición de hojas de estilo en un archivo externo. </h1>
+<p>
+Hasta ahora hemos visto la definición de estilos a nivel de elemento HTML y la definición de estilos a nivel de página. Dijimos que la primera
+forma es muy poco recomendada y la segunda es utilizada cuando queremos definir estilos que serán empleados solo por esa página
+Ahora veremos que la metodologia más empleada es la definiciónde una hoja de estilo en un archivo separado que deberá tener la extension
+extension CSS
+</p>
+</body>
+</html> 
+---
+body {
+    background-color:#eafadd;
+    }
+    h1 {
+    color:#0000cc;
+    font-family:times new roman;
+    font-size:25px;
+    text-align:center;
+    text-decoration:underline;
+    }
+    p{
+    color:#555555;
+    font-family:verdana;
+    text-align: justify
+    }
+
+
+    -------------------------------
+    
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Problema </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="estilos.css"
+type="text/css">
+</head>
+<body>
+<h1 class="resaltado">Titulo de nivel 1</h1>
+<p>
+Este párrafo muestra el resultado de aplicar la clase resaltado en la última
+<span class="resaltado">palabra. </span>
+</p>
+</body>
+</html>
+---/*body {
+    background-color:#eeeeee;
+}
+.resaltado{
+    color:#000000;
+    background-color:#ffff00;
+    font-style:italic
+}*/
+
+
+--------------------------
+<!DOCTYPE html>
+<html>
+<head>
+<title> Problema</title>
+<meta charset="UTF-8">
+<link rel="StyleSheet" href="estilos.css" type="text/css">
+</head>
+<body>
+<div id="cabecera">
+<h1>Titulo de la cabecera</h1>
+</div>
+</body>
+---
+/*#cabecera{
+    font-family: Times New Roman;
+    font-size:30px;
+    text-align:center;
+    color:#0000ff;
+    background-color:#bbbbbb;
+    }*/
+
+---------------
+
+    <!DOCTYPE html>
+        <html>
+        <head>
+        <title> Problema</title>
+        <meta charset="UTF-8">
+        <link rel="StyleSheet" href="estilos.css"
+        type="text/css">
+        </head>
+        <body>
+        <p class="pregunta">¿Quién descubrió América y en que año fue?</p>
+        <p class="respuesta">Colón en 1492</p>
+        </body>    
+    </html>
+    ----
+    /*.pregunta {
+        background-color:#ffff00;
+        border-width:1px;
+        border-style:solid;
+        border-color:#000000;
+        }
+        respuesta{
+        border-width:1px;
+        border-style: dashed;
+        border-color:#000000
+        }*/
+
+
+--------------------
+<!DOCTYPE html>
+        <html>
+        <head>
+        <title> Problema</title>
+        <meta charset="UTF-8">
+        <link rel="StyleSheet" href="estilos.css"type="text/css">
+        </head>
+        <body>
+        <h1 class="titulopagina">El blog del pensador</h1>
+        </body>
+        </html>
+----
+/*.titulopagina {
+    background-color:#ffffcc;
+    text-align:center;
+    font-family:verdana;
+    font-size:40px;
+    border-top-width:1px;
+    border-right-width:3px;
+    border-bottom-width:3px;
+    border-left-width:1px;
+    border-top-style: dotted;
+    border-right-style:solid;
+    border-bottom-style:solid;
+    border-left-style: dotted;
+    border-top-color: #ffaa00;
+    border-right-color:#ff0000;
+    border-bottom-color: #ff0000;
+    border-left-color: #ffaa00
+}*/
+
+
+
+----------------------------
+
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Problema </title>
+    <meta charset="UTF-8">
+    <link rel="StyleSheet" href="estilos.css" type="text/css">
+    </head>
+    <body>
+    <pre class="codigofuente">
+    public class Rectangulo{
+    //atributos
+    int alto, ancho;
+    boolean relleno;
+    //métodos
+    public int devolverArea(){
+    return alto * ancho;
+    }
+    public void rellenar(boolear r){
+    relleno=r;
+    }
+    public void cambiarTamano(int an, int al){
+    ancho=an;
+    alto=al;
+    }
+    public Rectangulo() {// constructor
+    alto=20;
+    ancho=10;
+    relleno=false;
+    }
+    }//fin clase Rectangulo
+    </pre>
+    </body>
+    </html>
+ 
+
+    
+---
+/* .codigofuente {
+    font-size:12px;
+    background-color:#ffffcc;
+    border-width:1px;
+    border-style: dotted;
+    border-color:#ffaa00;
+    padding: 20px;
+    }*/
+

@@ -1,0 +1,225 @@
+<!--JavaScript-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('Hello world')
+    </script>
+</body>
+</html>
+
+<!--Variables-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nombre = 'Juan';
+        var edad = 10;
+        var altura = 1.92;
+        var casado = false;
+        document.write(nombre);
+        document.write('<br>');
+        document.write(edad);
+        document.write('<br>');
+        document.write(altura)
+        document.write('<br>');
+        document.write(casado);
+        </script>
+</body>
+</html>
+
+
+
+<!--Entrada de datos por teclado-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        var nombres = 'Juan';
+        var edad = 10;
+        var altura = 1.92;
+        var casado = false;
+        document.write(nombre);
+        document.write('<br>');
+        document.write(edad);
+        document.write('<br>');
+        document.write(altura);
+        document.write('<br>');
+        document.write(casado);
+        </script>
+</body>
+</html>
+
+
+--------------------
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+    </body>
+   
+    <script>
+    var nombre;
+    var edad;
+    nombre=prompt('Ingrese su nombre:','');
+    edad=prompt('Ingrese su edad:','');
+    document.write('Hola ', nombre, ' asi que tienes ', edad, 'años');
+</script>
+
+
+------------------------------------
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+    
+    <script>
+    var num1, num2
+    num1=parseInt(prompt('Ingrese el primer número:',''));
+    num2=parseInt(prompt('Ingrese el segundo número:',''));
+    if (num1>num2){
+    document.write('el mayor es '+num1);
+    }   else{
+            document.write('el mayor es '+num2);
+        }
+    </script>
+    </body>
+    </html>
+    ------------------------
+
+<!--Ejemplo 1: Confeccionar una función que reciba un valor entero comprendido entre 1 y 5. Luego retornar en castellano
+el valor recibido.-->
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+    
+    <script>
+    function convertiraletra(x){
+    if (x==1)
+    return "uno";
+        else if (x==2)
+            return "dos"
+                else if (x==3)
+                    return "tres";
+                        else if (x==4)
+                            return "cuatro";
+                                else if (x==5)
+                                    return "cinco";
+                                        else
+                                            return "valor incorrecto";
+    }
+    var valor;
+    valor=prompt("Ingrese un valor entre 1 y 5","");
+    valor=parseInt(valor);
+    var r;
+    r=convertiraletra(valor);
+    document.write(r);
+    </script>
+    </body>
+    </html>
+
+    ------------------------------------
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    </head>
+    <body>
+    <script src="funciones.js"></script>
+    <script>
+    document.write('La fecha de hoy es: '+retornarFecha(), '<br>');
+    document.write('La hora es:'+retornarHora());
+    </script>
+    </body>
+    </html>
+--------
+function retornarFecha(){
+    var fecha;
+    fecha = new Date();
+    var cadena = fecha.getDate()+'/'+(fecha.getMonth()+1)+'/'+fecha.getFullYear();
+        return cadena;
+    }
+    function retornarHora(){
+    var fecha;
+    fecha = new Date();
+    var cadena= fecha.getHours()+':'+fecha.getMinutes()+':'+fecha.getSeconds();
+        return cadena;
+    }
+
+------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplo de JavaScript</title>
+    <meta charset="UTF-8">
+    </head>
+<body>
+
+<script>
+var contador=0;
+function incrementar(){
+        contador++;
+        alert('El contador ahora vale :' + contador);
+        }
+</script>
+
+<form>
+    <input type="button" onClick="incrementar()" value="incrementar">
+</form>
+</body>
+</html>
+---------------
+
+<!--PROBLEMA
+Crear un formulario con tres botones con las leyendas "1", "2" y "3". Mostrar un mensaje indicando qué botón se
+presionó.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo de JavaScript</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<script>
+function presion1(){
+alert('Se presionó el botón 1');
+}
+function presion2(){
+    alert('Se presionó el botón 2');
+}
+function presion3(){
+    alert('Se presionó el botón 3');
+}
+</script>
+
+<form>
+<input type="button" onClick="presion1()" value="Boton 1">
+<input type="button" onClick="presion2()" value="Boton 2">
+<input type="button" onClick="presion3()" value="Boton 3">
+</form>
+</body>
+</html>
